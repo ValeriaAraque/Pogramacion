@@ -43,3 +43,13 @@ while (desicion == 0):
                 !0 - Para finalizar
     : """))
 print (listaHobbies)
+
+desicion = "si"
+while (desicion == "si"):
+    hobbie = input("Cual es tu hobbie favorito? : ")
+    listaHobbies.append (hobbie)
+    desicion = input ("""Ingrese :
+                si - Para seguir agregando hobbies
+                no - Para finalizar
+    : """)
+print (listaHobbies)
