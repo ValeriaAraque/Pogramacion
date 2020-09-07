@@ -1,6 +1,6 @@
 #------Ciclo while------
 # Leer números enteros de teclado, hasta que el usuario ingrese el 0. Finalmente, mostrar la sumatoria de todos los números ingresados
-preguntaNumero = "Ingrese un numero entero: "
+preguntaNumero = "Ingrese un numero entero o 0 para terminar: "
 
 numeroUsuario = int(input(preguntaNumero))
 suma = 0
@@ -35,5 +35,3 @@ while (numeroEntero2 >= numeroEntero1):
     numeroEntero2 = int(input(preguntaEntero2))
 
 print ("Has ingresado un numero menor al anterior")
-
-
