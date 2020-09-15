@@ -23,7 +23,7 @@ preguntaEdad = "Ingrese su edad: "
 mensajeMenorEdad = "Si tienes {} años eres menor de edad"
 mensajeJoven = "Si tienes {} años eres considerado un joven"
 mensajeAdulto = "Si tienes {} años eres un adulto"
-mensajeAdultoMayot = "Si tienes {} años eres un adulto mayor"
+mensajeAdultoMayor = "Si tienes {} años eres un adulto mayor"
 #Entradas
 edad = int(input(preguntaEdad))
 #Condicionales
@@ -35,3 +35,23 @@ elif (edad >=26 and edad <= 60):
     print (mensajeAdulto.format(edad))
 else:
     print (mensajeAdultoMayot.format(edad))
+
+#3. Escriba un programa que pida el año actual  y un año cualquiera y que escriba cuantos años han pasado desde ese año o cuantos años faltan para llegar a ese año 
+#Preguntas 
+preguntaAñoActual = "Ingrese el año actual: "
+preguntaAño = "Ingrese un año cualquiera: "
+#Mensajes 
+añosFaltantes = "Faltan {} años para llegar al año que ingresaste"
+añosPasados = "Han pasado {} años desde el año que ingresaste"
+#Entradas
+añoActual = int(input(preguntaAñoActual))
+año = int(input(preguntaAño))
+#Condicional
+if (añoActual > año):
+    resta = añoActual-año
+    print (añosPasados.format(resta))
+elif (añoActual < año):
+    restaPasados = año-añoActual
+    print (añosFaltantes.format(restaPasados))
+else:
+    print ("Los años que ingresaste son iguales")
