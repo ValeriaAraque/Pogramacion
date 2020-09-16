@@ -6,7 +6,7 @@ preguntaMontoPositivo = "Ingresa un monto positivo:"
 monto1 = float(input(preguntaMonto))
 suma =0
 
-while (monto1<0):
+if (monto1<0):
     monto1 = float(input(preguntaMontoPositivo))
 
 while (monto1 !=0):
