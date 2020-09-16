@@ -55,6 +55,7 @@ for elemento in listaGradosC:
     else:
         estado = 'Fiebre'
     listaEstadosSalud.append (estado)
+
 #Calculo maximo & minimo
 mayor = max(listaGradosC)
 menor = min(listaGradosC)
@@ -84,7 +85,7 @@ while (opcion != 4):
         print (mensajeOpcion.format (3))
         print ('La temperatura maxima fue', mayor)
         print ('La temperatura minima fue', menor)
-        print ('La temperatura fue tomada con una freciencia de', frecuencia)
+        print ('La temperatura fue tomada con una frecuencia de', frecuencia)
     else:
         print (mensajeEntradaNoValida)
 
