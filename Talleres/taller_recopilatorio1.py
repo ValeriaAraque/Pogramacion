@@ -21,6 +21,9 @@ mensajeErrorMenu = "Por favor ingrese una opcion valida, 1,2,3,4"
 mensajeDolares = "No es necesaria una conversion"
 mensajeSalida = "Gracias por usar el codigo"
 mensajeOpcion = "Usted escogio la opcion {}"
+mensajeMaximo = "El salario maximo es de {}"
+mensajeMinimo = "El salario minimo es de {}"
+mensajePromedio = "El salario promedio es de {}"
 
 #Inicio Codigo
 opcionMenu = int(input(preguntaMenu))
@@ -57,7 +60,9 @@ ingresoMin = min(listaDolares)
 suma = 0 
 for elementos in listaDolares:
     suma += elemento
-promedioIngresos = suma/len(listaDolares)
+promedio= suma/len(listaDolares)
+#Para redondear
+promedioIngresos = round(promedio,2)
 
 #Menu
 while (opcionMenu !=4):
@@ -78,9 +83,9 @@ while (opcionMenu !=4):
         print (listaClasificacion)
     elif (opcionMenu ==3):
         print (mensajeOpcion.format(3))
-        print ('El ingreso maximo fue', ingresoMax)
-        print ('El ingreso minimo fue', ingresoMin)
-        print ('Los ingresos promedios son de', promedioIngresos)
+        print (mensajeMaximo, ingresoMax)
+        print (mensajeMinimo, ingresoMin)
+        print (mensajePromedio, promedioIngresos)
     else:
         print (mensajeErrorMenu)
     #Entrada variable opcion

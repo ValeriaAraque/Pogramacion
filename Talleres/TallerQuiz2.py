@@ -20,10 +20,12 @@ mensajeEntradaNoValidaN = 'Recuerde ingresar una opcion valida 1,2,3,4'
 mensajeEntradaNoValidaT = 'Recuerde ingresar una opcion valida F,K,C'
 #Mensajes
 mensajeEntradaNoValida = 'Recuerde ingresar una opcion valida 1,2,3,4'
-mensajeOpcion = 'Usted escogio la opcion{}'
+mensajeOpcion = 'Usted escogio la opcion {}: '
 mensajeSalida = 'Gracias por usar el programa'
 mensajeCelcius = 'No es necesaria la conversion, pero se muestra l alista'
-
+mensajeTempMax = "La temperatura maxima es de {}"
+mensajeTempMin = "La temperatura minima es de {}"
+mensajeTempFrec = "La temperatura se tomo con una frecuencia de {}"
 
 #Inicio codigo
 opcion = int(input(preguntaMenu))
@@ -83,9 +85,9 @@ while (opcion != 4):
         print (listaEstadosSalud)
     elif (opcion ==3):
         print (mensajeOpcion.format (3))
-        print ('La temperatura maxima fue', mayor)
-        print ('La temperatura minima fue', menor)
-        print ('La temperatura fue tomada con una frecuencia de', frecuencia)
+        print (mensajeTempMax.format(mayor))
+        print (mensajeTempMin.format(menor))
+        print (mensajeTempFrec.format(frecuencia))
     else:
         print (mensajeEntradaNoValida)
 
