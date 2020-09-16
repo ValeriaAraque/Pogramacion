@@ -34,7 +34,7 @@ elif (edad >=18 and edad <= 25):
 elif (edad >=26 and edad <= 60):
     print (mensajeAdulto.format(edad))
 else:
-    print (mensajeAdultoMayot.format(edad))
+    print (mensajeAdultoMayor.format(edad))
 
 #3. Escriba un programa que pida el año actual  y un año cualquiera y que escriba cuantos años han pasado desde ese año o cuantos años faltan para llegar a ese año 
 #Preguntas 
@@ -55,3 +55,35 @@ elif (añoActual < año):
     print (añosFaltantes.format(restaPasados))
 else:
     print ("Los años que ingresaste son iguales")
+
+#4. Escriba un programa que pida una distancia en centimetros, y que escriba esa dsitancia en kilometros,metros y centimetros
+#Preguntas
+preguntaCM = "Ingrese una distancia en cm: "
+preguntaUnidad = '''
+Ingrese a que unidad desea transformar:
+                k - kilometros
+                M - Metros
+                mm - milimetros
+: '''
+
+#Mensajes
+mensajeMM= "Usted a ingresado una distancia de {} mm"
+mensajeM = "Usted a ingresado una distancia de {} m"
+mensajeKM = "Usted a ingresado una distancia de {} km"
+mensajeError = "Usted ha ingresado una opcion de unidad no valida"
+#Entradas
+medida = float(input(preguntaCM))
+unidad = input(preguntaUnidad)
+#Conversiones
+metros = medida *10**-2
+kilometros = medida *10**-5
+milimetros = medida *10
+#Condicionales
+if (unidad == 'K'):
+    print (mensajeKM.format(kilometros))
+elif (unidad == 'M'):
+    print (mensajeM.format(metros))
+elif (unidad == 'mm'):
+    print (mensajeMM.format(milimetros))
+else:
+    print (mensajeError)
