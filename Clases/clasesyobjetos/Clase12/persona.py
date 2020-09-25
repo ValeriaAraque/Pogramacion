@@ -6,11 +6,11 @@ class Persona():
         self.id = idIn
     #Acciones
     #Hablar
-    def hablar (mensaje):
+    def hablar (self, mensaje):
         print (f'Hola soy {self.nombre} y tengo algo que decir : {mensaje}')
     #Comer
     def comer (self, plato):
-        print (f'HoLA SOY {self.nombre} y voy a comer un delicioso {plato}')
+        print (f'Hola soy {self.nombre} y voy a comer un delicioso {plato}')
         
 
 
