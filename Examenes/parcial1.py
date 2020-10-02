@@ -2,23 +2,15 @@
 print ('-------Primera parte: Funciones-------')
 def elevarCuadrado (numero):
     return numero**2
-numeroCuadrado = elevarCuadrado(2)
-print (f'El numero elevado al cuadrado es: {numeroCuadrado}')
 
 def elevarCubico (numero):
     return numero**3
-numeroCubico = elevarCubico(2)
-print (f'El numero elevado a la tres es: {numeroCubico}')
 
 def elevarCuatro (numero):
     return numero**4
-numeroCuatro = elevarCuatro(2)
-print (f'El numero elevado a la cuatro es: {numeroCuatro}')
 
 def elevarCinco(numero):
     return numero**5
-numeroCinco = elevarCinco(2)
-print (f'El numero elevado a la cinco es: {numeroCinco}')
 
 def operacionElevado (operacion,numero):
     print (f'La operacion realizada fue {operacion.__name__} y el numero resultante es {operacion(numero)}')
