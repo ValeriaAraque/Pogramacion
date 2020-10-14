@@ -26,3 +26,4 @@ archivo.write(f'Opinion de {nombre}\n')
 archivo.write(f'Edad: {edad}\n')
 archivo.write(f'Reseña:\n {opinion}\n')
 archivo.close()
+

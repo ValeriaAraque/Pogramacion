@@ -1,4 +1,8 @@
-Opinion de Valeria
+Opinion de & "C:/Users/VALERIA ARAQUE/AppData/Local/Programs/Python/Python38-32/python.exe" "c:/Users/VALERIA ARAQUE/Documents/Universidad/Tercer Semestre/Programacion/Pogramacion-1/Clases/manejoarchivos.py"
 Edad: 18
 Reseña:
- Estoy muy cansada
+ Estoy feliz
+
+Me gustó tu opinion del poema
+Nueva linea
+Nueva linea
